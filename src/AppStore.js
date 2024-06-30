@@ -23,14 +23,14 @@ function AppStore() {
         </p>
         <p className="mb-4">Get the App</p>
         <div className="flex flex-col md:flex-row">
-          <button className="flex items-center bg-gray-50 text-black text-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300 mr-5">
+          <button className="flex items-center bg-gray-50 text-black  py-2 px-4 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300 mr-5">
             <FaApple className="text-3xl mr-4 text-green-500" />
             <div className="text-left">
               <p className="text-xs">Get it on</p>
               <p className="text-lg font-bold">App Store</p>
             </div>
           </button>
-          <button className="flex items-center bg-gray-50 text-black text-white py-2 px-4 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300">
+          <button className="flex items-center bg-gray-50 text-black py-2 px-4 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300">
             <FaGooglePlay className="text-3xl mr-4 text-green-500" />
             <div className="text-left">
               <p className="text-xs">Get it on</p>
