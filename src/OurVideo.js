@@ -6,8 +6,8 @@ import { FaYoutube } from "react-icons/fa";
 
 function About() {
   return (
-    <div className="bg-primary text-white flex flex-col md:flex-row items-center justify-between w-full p-4 pt-16 pb-8 pl-11">
-      <div className="text-left md:w-1/2">
+    <div className="bg-primary text-white flex flex-col md:flex-row items-center justify-between w-full p-4 pt-16 pb-8">
+      <div className="text-left w-full md:w-1/2 px-4 md:px-11">
         <h2 className="text-4xl font-bold pb-4">Our Video Introductions</h2>
         <p className="mt-2 mb-8">
           Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna
@@ -46,11 +46,11 @@ function About() {
           </li>
         </ul>
       </div>
-      <div className="relative flex-shrink-1 ml-4 md:w-1/2">
+      <div className="relative w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0 px-4">
         <img
           src={sampleImage}
           alt="Example"
-          className="w-full h-auto max-w-xl object-cover ml-20 pl-14 rounded-2xl "
+          className="w-full h-auto max-w-xl object-cover rounded-2xl"
         />
         <FaYoutube className="absolute inset-0 m-auto text-8xl text-red-600" />
       </div>
