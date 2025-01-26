@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel with Us | Safety and Comfort</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Navbar Styles */
+    .navbar {
+      padding: 10px;
+      background-color: #006a62; /* Deep Teal */
+      
+      z-index: 10;
+    }
+    .nav-link {
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #004e46; /* Darker Teal */
+    }
+    .nav-link i {
+      transition: transform 0.3s ease;
+    }
+    .nav-link:hover i {
+      transform: scale(1.2);
+    }
+    .navbar-toggler-icon {
+      background-color: #004e46; /* Darker Teal */
+      transition: transform 0.3s ease;
+    }
+    .navbar-toggler:focus .navbar-toggler-icon {
+      transform: rotate(90deg);
+    }
+    .navbar-nav {
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      .navbar-nav .nav-link {
+        padding: 12px 0;
+      }
+    }
+
+   /* Hero section */
+   .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns for content and image */
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(135deg, #009688, #004e46); /* Light Teal to Dark Teal Gradient */
+    color: #fff;
+    padding: 40px 20px;
+    max-width: 100%;
+    overflow: hidden;
+    min-height: 100vh; /* Minimum height to ensure the hero section takes at least the full viewport height */
+}
+
+/* Hero Content (Form) */
+.hero-content {
+    z-index: 2;
+    text-align: left;
+    padding-right: 30px; /* Adds space between the form and image */
+    animation: fadeInLeft 1.5s ease-out;
+    margin-left: 40px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s ease-out;
+}
+
+/* Ticket Form */
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #006a62; /* Deep Teal */
+    box-shadow: 0 0 10px rgba(0, 106, 98, 0.5);
+}
+
+.book-button {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    background-color: #009688; /* Light Teal */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+}
+
+.book-button:hover {
+    background-color: #00796b; /* Darker Teal */
+    transform: translateY(-3px);
+}
+
+/* Hero Image */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInRight 2s ease-out forwards; /* Apply slideInRight animation */
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Initially hidden */
+    animation: slideInRight 2s ease-out forwards; /* Apply slideInRight to image */
+}
+
+/* Slide in from the right */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%); /* Start from the right */
+        opacity: 0; /* Initially hidden */
+    }
+    to {
+        transform: translateX(0); /* End at the original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero {
+        grid-template-columns: 1fr; /* Stack vertically on medium screens */
+    }
+
+    .hero-content {
+        max-width: 500px;
+        padding-right: 0;
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .hero-image img {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 770px) {
+    .hero {
+        grid-template-columns: 1fr; /* Stack elements vertically */
+        padding: 20px;
+    }
+
+    .hero-content {
+        text-align: center; /* Center content */
+        padding-right: 0;
+        max-width: 100%; /* Full width */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .ticket-form {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .book-button {
+        max-width: 90%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .book-button {
+        font-size: 1rem;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+    }
+}
+
+    /* Safety Section */
+    .safety-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.safety-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.safety-section .left-column {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.safety-section h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #006a62; /* Deep Teal */
+    margin-bottom: 20px;
+}
+
+.safety-section p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.safety-section h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.safety-section h2::before {
+    content: "✔";
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: #009688; /* Light Teal */
+}
+
+.safety-section .right-column {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.safety-section .right-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .safety-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .safety-section .left-column,
+    .safety-section .right-column {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .safety-section h1 {
+        font-size: 2rem;
+    }
+
+    .safety-section p {
+        font-size: 1rem;
+    }
+
+    .safety-section h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .safety-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .safety-section p {
+        font-size: 0.9rem;
+    }
+
+    .safety-section h2 {
+        font-size: 0.9rem;
+    }
+}
+   /* Features Section */
+.features-section {
+  background-color: #f8f9fa;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.features-section h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #006a62;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #009688;
+  margin-bottom: 20px;
+}
+
+.feature h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #006a62;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+  /* Footer Section */
+  footer {
+      background-color: #004e46;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    footer a {
+      color: #00d0b4;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <div class="logo d-flex align-items-center">
+      <img src="https://via.placeholder.com/40/FF6347/FFFFFF?text=Bus" alt="Bus Logo" class="mr-2">
+      <a href="/" class="navbar-brand ">Company Name</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-dark"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="/" class="nav-link d-flex align-items-center">
+            <i class="fas fa-bus me-2"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact-us" class="nav-link d-flex align-items-center">
+            <i class="fas fa-phone-alt me-2"></i> Contact Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/feature-route" class="nav-link d-flex align-items-center">
+            <i class="fas fa-route me-2"></i> Feature Route
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/faq" class="nav-link d-flex align-items-center">
+            <i class="fas fa-question-circle me-2"></i> FAQ
+          </a>
+        </li>
+        <li class="nav-item">
+            <a href="/faq" class="nav-link d-flex align-items-center btn btn-success">
+              <i class="fas fa-question-circle me-2"></i> Login
+            </a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- Hero Content (Form) -->
+    <div class="hero-content">
+        <h1>Book Your Next Adventure</h1>
+        <p>Fill out the form below to book your tickets and begin your journey.</p>
+        
+        <!-- Ticket Booking Form -->
+        <div class="ticket-form">
+            <div class="form-group">
+                <label for="origin">Origin</label>
+                <input type="text" id="origin" placeholder="Enter your origin location" required />
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" placeholder="Enter your destination" required />
+            </div>
+            <div class="form-group">
+                <label for="date">Travel Date</label>
+                <input type="date" id="date" required />
+            </div>
+            <button class="book-button">Book Now</button>
+        </div>
+    </div>
+    
+    <!-- Hero Image (Right Side) -->
+    <div class="hero-image">
+        <img src="https://static.vecteezy.com/system/resources/previews/044/283/108/non_2x/travel-bus-on-transparent-background-free-png.png" alt="Travel Image" />
+    </div>
+</section>
+  <!-- Safety Section -->
+  <section class="safety-section">
+    <div class="left-column">
+      <h1>Our Safety Promise</h1>
+      <p>We prioritize your safety, ensuring a smooth and secure journey every time.</p>
+      <h2>COVID-19 Safety Measures</h2>
+      <p>We ensure strict adherence to all COVID-19 protocols.</p>
+      <h2>Regular Maintenance</h2>
+      <p>All buses are regularly checked for mechanical integrity.</p>
+    </div>
+    <div class="right-column">
+      <img src="./secure-trip.png" alt="Safety Measures" />
+    </div>
+</section>
+  <!-- Features Section -->
+<section class="features-section">
+    <h1>Why Choose Us?</h1>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-cogs"></i>
+        </div>
+        <h2>Modern Fleet</h2>
+        <p>Our buses are equipped with the latest technology and comforts.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-clock"></i>
+        </div>
+        <h2>On-Time Service</h2>
+        <p>We guarantee timely departures and arrivals, ensuring convenience.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <h2>Customer-Centric</h2>
+        <p>Our customer service is always available to assist you with your needs.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-tachometer-alt"></i>
+        </div>
+        <h2>Speed & Efficiency</h2>
+        <p>We prioritize delivering you to your destination on time and without delays.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-bus"></i>
+        </div>
+        <h2>Comfortable Seating</h2>
+        <p>Our buses feature spacious seating with modern amenities for a relaxed journey.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h2>Safety First</h2>
+        <p>We ensure high safety standards with onboard safety measures and protocols.</p>
+      </div>
+    </div>
+  </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Travel with Us | Designed with <i class="fas fa-heart"></i> by Travel with Us Team</p>
+        <p>
+          Follow us on 
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>, 
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>, and 
+          <a href="#" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </p>
+      </footer>
+    
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Add animation to safety section
+    window.onload = () => {
+      document.querySelector('.safety-section').classList.add('visible');
+    };
+
+    // Add animation to features section
+    const features = document.querySelectorAll('.feature');
+    features.forEach((feature, index) => {
+      setTimeout(() => {
+        feature.classList.add('visible');
+      }, index * 500);
+    });
+  </script>
+</body>
+</html>
