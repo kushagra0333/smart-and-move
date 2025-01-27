@@ -522,7 +522,7 @@ function App() {
   ];
 
   return (
-    <div className=" w-full sm:max-w-[95%] mx-auto bg-white ">
+    <div className=" w-full sm:max-w-[100%] mx-auto bg-white ">
       <Header />
       <MainPage />
       <div className=" bg-service flex flex-col items-center text-center pt-14">

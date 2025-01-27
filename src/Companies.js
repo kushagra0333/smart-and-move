@@ -6,6 +6,7 @@ import img1 from "./Asset/download (4).png";
 import img5 from "./Asset/Zoom-Logo.png";
 
 function Companies() {
+  
   const images = [
     { src: img1, alt: "Coinbase" },
     { src: img2, alt: "Dropbox" },
@@ -15,7 +16,7 @@ function Companies() {
   ];
 
   return (
-    <div className="flex justify-around items-center w-full p-8 bg-white space-x-6">
+    <div className="flex justify-around items-center w-full p-8 my-12 bg-white space-x-6">
       {images.map((image, index) => (
         <div key={index} className="flex items-center">
           <img src={image.src} alt={image.alt} className="h-12 md:h-16" />

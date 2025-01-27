@@ -22,7 +22,7 @@ function AppStore() {
           </>
         </p>
         <p className="mb-4">Get the App</p>
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row mb-8">
           <button className="flex items-center bg-gray-50 text-black  py-2 px-4 rounded-lg shadow-lg hover:bg-gray-800 transition duration-300 mr-5">
             <FaApple className="text-3xl mr-4 text-green-500" />
             <div className="text-left">
@@ -55,7 +55,7 @@ function AppStore() {
             className="w-full h-auto object-cover rounded  translate-y-10"
           />
         </div>
-        <p className="absolute transform translate-x-[34rem] translate-y-[14rem] inset-0 m-auto ">
+        <p className="absolute transform translate-x-[27rem] translate-y-[14rem] inset-0 m-auto ">
           <h2 className="font-bold text-xl text-primary ">
             Register<span className="text-secondary">Karo</span>
           </h2>

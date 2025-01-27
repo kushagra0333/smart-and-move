@@ -1,37 +1,10 @@
 import React from "react";
-import logo1 from "./Asset/65eba5ffa14998827c92cc01_slack-octothorpe.png";
-import logo2 from "./Asset/Pinterest-logo.png";
-import logo3 from "./Asset/_shopping-512.webp";
-import logo4 from "./Asset/atlassian-icon-512x512-2p7fz86w.png";
-import logo5 from "./Asset/download (1).png";
-import logo6 from "./Asset/download (2).png";
-import logo7 from "./Asset/download (3).png";
+import logo from "./Asset/all-icon.png";
+
 import { FaArrowRight } from "react-icons/fa";
 
 const HappyClients = () => {
-  const blog = [
-    {
-      image: logo1,
-    },
-    {
-      image: logo2,
-    },
-    {
-      image: logo3,
-    },
-    {
-      image: logo4,
-    },
-    {
-      image: logo5,
-    },
-    {
-      image: logo6,
-    },
-    {
-      image: logo7,
-    },
-  ];
+ 
 
   return (
     <div className="bg-white text-center mb-16">
@@ -44,17 +17,8 @@ const HappyClients = () => {
           leveling customer service for state of the art customer service.
         </>
       </div>
-      <div className="flex justify-items-end pl-24 flex-wrap">
-        {blog.map((house, index) => (
-          <div
-            className="bg-white p-5 pb-10 w-full max-w-[352px] mx-auto cursor-pointer"
-            key={index}
-          >
-            <div className="font-semibold max-w-[260px] size-16 justify-center">
-              <img src={house.image} />
-            </div>
-          </div>
-        ))}
+      <div className=" w-[100%]">
+        <img src={logo}></img>
       </div>
 
       <a

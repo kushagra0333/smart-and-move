@@ -41,7 +41,7 @@ function Header() {
             About us
           </a>
           <a
-            className="hidden sm:block hover:text-violet-900 transition"
+            className="hidden sm:block hover:text-violet-900 transition text-[24px]"
             to="/"
           >
             <CiSearch />

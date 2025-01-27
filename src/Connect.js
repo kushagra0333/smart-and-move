@@ -2,8 +2,11 @@ import React from "react";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 
 const Connect = () => {
+  const gradientStyle = {
+    background: 'linear-gradient(96.22deg, #FFA229 9%, #1C4670 59.37%)',
+  };
   return (
-    <div className="bg-primary text-center">
+    <div style={gradientStyle} className=" text-center">
       <div className="text-white text-sm pt-8 uppercase tracking-widest">
         1% of the industry
       </div>
