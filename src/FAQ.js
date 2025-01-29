@@ -3,20 +3,20 @@ import { FaArrowRight } from "react-icons/fa";
 
 const faqData = [
   {
-    question: "Can I recover deleted files from desktop with this software?",
-    answer: "Yes, We can do that",
+    question: "How long does it take to get a refund?",
+    answer: "Refunds are usually processed within 3–7 working days, depending on the payment method used.",
   },
   {
-    question: "Can I recover deleted files from desktop with this software?",
-    answer: "Yes, We can do that",
+    question: "What if my QR code doesn’t work at the bus gate?",
+    answer: "Contact the helpline or show your booking details to the bus conductor for manual verification.",
   },
   {
-    question: "Can I recover deleted files from desktop with this software?",
-    answer: "Yes, We can do that",
+    question: "What should I do if I lose my phone or QR code?",
+    answer: "You can log in from another device and access your ticket under "My Bookings.",
   },
   {
-    question: "Can I recover deleted files from desktop with this software?",
-    answer: "Yes, We can do that",
+    question: "How can I contact customer support",
+    answer: "You can reach us via email, phone, or the live chat option available on the website.",
   },
 ];
 
