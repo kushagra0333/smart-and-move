@@ -1,5 +1,5 @@
 import React from "react";
-import sampleImage from "./Asset/bus_booking_image.avif";
+import sampleImage from "./Asset/smiling-businesswoman-typing-laptop-sitting-cafe_197531-340.avif";
 import { FaRegLightbulb } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
