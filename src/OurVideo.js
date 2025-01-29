@@ -1,5 +1,5 @@
 import React from "react";
-import sampleImage from "./Asset/smiling-businesswoman-typing-laptop-sitting-cafe_197531-340.avif";
+import sampleImage from "./Asset/bus_booking_image.avif";
 import { FaRegLightbulb } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
@@ -8,10 +8,10 @@ function About() {
   return (
     <div className="bg-primary text-white flex flex-col md:flex-row items-center justify-between w-full p-4 pt-16 pb-8">
       <div className="text-left w-full md:w-1/2 px-4 md:px-11">
-        <h2 className="text-4xl font-bold pb-4">Our Video Introductions</h2>
+        <h2 className="text-4xl font-bold pb-4">Seamless Bus Booking Experience</h2>
         <p className="mt-2 mb-8">
-          Velit purus egestas tellus phasellus. Mattis eget sed faucibus magna
-          vulputate pellentesque a diam tincidunt apis dui.
+          Say goodbye to long queues and unreliable ticketing systems. Our platform ensures a smooth,
+          transparent, and efficient way to book government bus tickets online.
         </p>
         <ul>
           <li>
@@ -21,10 +21,10 @@ function About() {
               </div>
 
               <div>
-                <h2 className="text-xl font-bold">Explore ideas together</h2>
+                <h2 className="text-xl font-bold">Smart & Hassle-Free Booking</h2>
                 <p className="mt-2">
-                  Engage audience segments and finally create actionable
-                  insights. Amplify vertical integration.
+                  Easily search, select, and book government bus tickets from the comfort of your home.
+                  Our user-friendly interface makes booking seamless and stress-free.
                 </p>
               </div>
             </div>
@@ -36,10 +36,10 @@ function About() {
               </div>
 
               <div>
-                <h2 className="text-xl font-bold">Bring those ideas to life</h2>
+                <h2 className="text-xl font-bold">Real-Time Ticket Validation</h2>
                 <p className="mt-2">
-                  Engage audience segments and finally create actionable
-                  insights. Amplify vertical integration.
+                  Every booking generates a unique QR code, ensuring transparency and preventing corruption.
+                  Scan your QR code at bus gates for seamless entry.
                 </p>
               </div>
             </div>
@@ -49,7 +49,7 @@ function About() {
       <div className="relative w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0 px-4">
         <img
           src={sampleImage}
-          alt="Example"
+          alt="Bus Booking System Preview"
           className="w-full h-auto max-w-xl object-cover rounded-2xl"
         />
         <FaYoutube className="absolute inset-0 m-auto text-8xl text-red-600" />
