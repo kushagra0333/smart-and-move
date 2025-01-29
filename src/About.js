@@ -5,18 +5,12 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 const text = {
   description: (
     <>
-      We have been using Intelegencia as our DevOps vendor for our field service
-      applications over the last couple of years and I’m extremely pleased with
-      their performance, ability to execute, and willingness to adapt in our
-      ever-changing environment.
+      We have been working on revolutionizing public transportation with our innovative high-tech bus service over the last couple of years, and I’m extremely proud of the progress we’ve made in addressing inefficiencies and corruption in this sector.
       <br />
-      Perry is an outstanding leader who is fanatical about customer
-      satisfaction. He has built a solid team which has consistently delivered
-      on projects thereby exceeding everyone’s expectations.
+      Our solution is built on transparency, reliability, and adaptability to cater to the ever-changing needs of daily commuters and environmentally conscious riders. By integrating advanced technology like QR-based ticketing and AI-powered fare management systems, we have consistently exceeded expectations and delivered tangible improvements in public transport efficiency.
       <br />
-      <br />I would strongly recommend their services to any organization that
-      is looking for solid, reliable, and predictable outcomes.
-    </>
+      <br />I would strongly recommend our services to any organization or authority looking to enhance their public transportation system with reliable, secure, and cutting-edge solutions.
+    </>
   ),
 };
 
