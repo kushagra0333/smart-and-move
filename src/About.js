@@ -32,10 +32,10 @@ function About() {
       </div>
       <div className="flex-shrink-0 ml-4 md:w-1/2 ">
         <img
-          src={sampleImage}
+          src="https://gst-contracts.s3.ap-southeast-1.amazonaws.com/uploads/bcc/cms/asset/avatar/324800/banner6.jpg"
           alt="Example"
           className="w-full h-auto max-w-3xl object-cover rounded border border-amber-600"
-        />
+        />
       </div>
     </div>
   );
