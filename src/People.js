@@ -7,45 +7,45 @@ import sample1 from "./Asset/577fecc62a4c5235cee2977557cb6590.jpg";
 
 const customers = [
   {
-    name: "LusDen",
-    review: "magna aliqua. Ut",
+    name: "John Doe",
+    review: "Excellent Service!",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      "I had a great experience booking my bus tickets through this platform. The process was smooth, and I got my tickets instantly. Highly recommended!",
     image: sample1,
   },
   {
-    name: "Court",
-    review: "magna aliqua. Ut",
+    name: "Jane Smith",
+    review: "Very User-Friendly",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      "The website is very easy to navigate, and I found the best deals for my trip. The customer support was also very helpful when I had a query.",
     image: sample1,
   },
   {
-    name: "Zen Court",
-    review: "magna aliqua. Ut",
+    name: "Alice Johnson",
+    review: "Reliable and Efficient",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      "I travel frequently, and this platform has never let me down. The buses are always on time, and the booking process is hassle-free.",
     image: sample1,
   },
   {
-    name: "Zen ",
-    review: "magna aliqua. Ut",
+    name: "Bob Brown",
+    review: "Great Discounts",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      "I saved a lot of money using the discounts and offers available on this platform. The payment process was also very secure.",
     image: sample1,
   },
   {
-    name: "Zenrt",
-    review: "magna aliqua. Ut",
+    name: "Charlie Davis",
+    review: "Smooth Booking Experience",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      "I was able to book my bus tickets within minutes. The interface is intuitive, and I received my e-ticket immediately.",
     image: sample1,
   },
   {
-    name: "Mourt",
-    review: "magna aliqua. Ut",
+    name: "Eve Wilson",
+    review: "Highly Satisfied",
     feedback:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+      "The platform offers a wide range of bus options, and I could easily compare prices and timings. My journey was comfortable and stress-free.",
     image: sample1,
   },
 ];
@@ -76,7 +76,7 @@ const CustomerFeedback = () => {
       <div className="container mx-auto ">
         <div className="heading_container text-center mb-12 relative">
           <h2 className="text-4xl font-bold text-left text-white">
-            What peoples says about me
+            What people say about us
           </h2>
           <div className="absolute top-0 right-0 mt-4 mr-4 flex space-x-2">
             <button
