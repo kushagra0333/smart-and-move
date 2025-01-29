@@ -5,18 +5,20 @@ const Connect = () => {
   const gradientStyle = {
     background: 'linear-gradient(96.22deg, #FFA229 9%, #1C4670 59.37%)',
   };
+
   return (
-    <div style={gradientStyle} className=" text-center">
-      <div className="text-white text-sm pt-8 uppercase tracking-widest">
-        1% of the industry
+    <div style={gradientStyle} className="text-center mb-12">
+     
+      <div className="text-white font-bold text-4xl pt-8 py-2 ">
+      Find the Nearest Bus Stop
       </div>
-      <div className="text-white font-bold text-4xl py-2 pb-10">
-        Welcome to your new Digital Reality, Now.
+      <div className="text-white text-sm pt-3 pb-8 uppercase tracking-widest">
+      Enter your current location to find the nearest bus stop and get directions to it!
       </div>
       <div className="mb-8">
         <input
           type="text"
-          placeholder="Enter your Mail"
+          placeholder="Enter Your Exact Location"
           className="rounded-l-sm px-4 py-2 w-1/3 border shadow-1"
         />
         <button className="bg-secondary rounded-r-sm px-4 py-2 border shadow-1">
@@ -26,27 +28,29 @@ const Connect = () => {
 
       <div className="flex justify-center items-center w-full justify">
         <div className="flex items-center mx-4">
-          <div className="rounded-full p-3 flex items-center justify-center text-white mr-2 ">
+          <div className="rounded-full p-3 flex items-center justify-center text-white mr-2">
             <IoCheckmarkDoneCircle />
           </div>
-          <h2 className="text-sm text-white font-semibold">Instant Result</h2>
-        </div>
-
-        <div className="flex items-center mx-4">
-          <div className="rounded-full p-3 flex items-center justify-center text-white mr-2 ">
-            <IoCheckmarkDoneCircle />
-          </div>
-          <h2 className="text-sm text-white font-semibold ">
-            User-friendly Interface
+          <h2 className="text-sm text-white font-semibold">
+            Instantly Find the Nearest Bus Stop to You
           </h2>
         </div>
 
         <div className="flex items-center mx-4">
-          <div className="rounded-full p-3 flex items-center justify-center text-white mr-2 ">
+          <div className="rounded-full p-3 flex items-center justify-center text-white mr-2">
             <IoCheckmarkDoneCircle />
           </div>
-          <h2 className="text-sm text-white font-semibold ">
-            Personalized Interface
+          <h2 className="text-sm text-white font-semibold">
+            Seamless Access to Nearby Bus Stops
+          </h2>
+        </div>
+
+        <div className="flex items-center mx-4">
+          <div className="rounded-full p-3 flex items-center justify-center text-white mr-2">
+            <IoCheckmarkDoneCircle />
+          </div>
+          <h2 className="text-sm text-white font-semibold">
+            Your Personalized Bus Stop Search
           </h2>
         </div>
       </div>
