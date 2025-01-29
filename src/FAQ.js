@@ -12,7 +12,7 @@ const faqData = [
   },
   {
     question: "What should I do if I lose my phone or QR code?",
-    answer: "You can log in from another device and access your ticket under "My Bookings.",
+    answer: "You can log in from another device and access your ticket under My Bookings.",
   },
   {
     question: "How can I contact customer support",
