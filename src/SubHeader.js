@@ -1,31 +1,31 @@
 import React from "react";
 import {
   FaCheckCircle,
-  FaTimesCircle,
-  FaInfoCircle,
-  FaExclamationCircle,
+  FaCreditCard,
+  FaQrcode,
+  FaEnvelope,
 } from "react-icons/fa";
 
 function IconHeadings() {
   const headings = [
     {
-      text: "Fill up Application Form",
+      text: "Book Your Ticket Online",
       icon: <FaCheckCircle />,
       color: "#eb5757",
     },
     {
-      text: "Make Online Payment",
-      icon: <FaTimesCircle />,
+      text: "Make Secure Payment",
+      icon: <FaCreditCard />,
       color: "#27ae60",
     },
     {
-      text: "Executive will Process Application",
-      icon: <FaInfoCircle />,
+      text: "Get QR Code for Entry",
+      icon: <FaQrcode />,
       color: "#f2994a",
     },
     {
-      text: "Get Confirm Mail",
-      icon: <FaExclamationCircle />,
+      text: "Receive Confirmation Mail",
+      icon: <FaEnvelope />,
       color: "#828282",
     },
   ];
