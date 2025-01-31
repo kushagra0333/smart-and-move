@@ -1,9 +1,9 @@
 import React from "react";
-import img1 from "./Asset/bus-digital-ticketing.jpeg";
-import img2 from "./Asset/qr-code-scanning.jpeg";
-import img4 from "./Asset/secure-online-payment.jpeg";
-import img5 from "./Asset/bus-travel-tips.jpeg";
-import img6 from "./Asset/public-transport-future.jpeg";
+import img1 from "./Asset/bus-digital-ticketing.webp";
+import img2 from "./Asset/qr-code-scanning.webp";
+import img4 from "./Asset/secure-online-payment.webp";
+import img5 from "./Asset/bus-travel-tips.webp";
+import img6 from "./Asset/public-transport-future.webp";
 import { FaArrowRight } from "react-icons/fa";
 
 const Blog = () => {
