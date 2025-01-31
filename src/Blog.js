@@ -1,134 +1,104 @@
 import React from "react";
-import img1 from "./Asset/e7dda523e77516da100b1a88dbaecb3c.jpeg";
-import img2 from "./Asset/adefff9c6fad99774e0aa7808b2270ab.jpeg";
-import img4 from "./Asset/76ceafadb9f758a56d19a086f7505a80.jpeg";
-import img5 from "./Asset/6b913ddf85158d3f3246fba7da982400.jpeg";
-import img6 from "./Asset/ab8c0e971321e0daafdbc3bc3adffb48.jpeg";
+import img1 from "./Asset/bus-digital-ticketing.jpeg";
+import img2 from "./Asset/qr-code-scanning.jpeg";
+import img4 from "./Asset/secure-online-payment.jpeg";
+import img5 from "./Asset/bus-travel-tips.jpeg";
+import img6 from "./Asset/public-transport-future.jpeg";
 import { FaArrowRight } from "react-icons/fa";
 
 const Blog = () => {
   const blog = [
     {
       image: img1,
-      who: "Prabhash Mishra",
-      time: "1 Jan 2023",
-      title: "Small Business & startup",
-      info: "Like to know the secrets of tranforming a 2-14 team into a 3x Super Bowl winning Dynasty",
-      tag1: "Tax & Audit",
-      tag2: "Management",
+      who: "Arjav Jain",
+      time: "15 Jan 2025",
+      title: "Revolutionizing Bus Ticketing",
+      info: "How digital ticketing and QR codes are transforming public transportation in India.",
+      tag1: "Technology",
+      tag2: "Innovation",
     },
     {
       image: img2,
-      who: "Mahesh Kumar",
-      time: "1 Jan 2023",
-      title: "Scale-Up Company Offer",
-      info: "Like to know the secrets of tranforming a 2-14 team into a 3x Super Bowl winning Dynasty",
-
-      tag2: "Research",
-      tag3: "Tax",
-      tag4: "Complience",
-    },
-    {
-      image: img1,
-      who: "Rakhi Verma",
-      time: "1 Jan 2023",
-      title: "Growing Business Package",
-      info: "Like to know the secrets of tranforming a 2-14 team into a 3x Super Bowl winning Dynasty",
-      tag1: "Audit",
-
-      tag3: "Money Back",
+      who: "Kushagra Pandey",
+      time: "18 Jan 2025",
+      title: "QR-Based Boarding System",
+      info: "Understanding how QR-based ticketing prevents fraud and speeds up boarding.",
+      tag2: "Security",
+      tag3: "Automation",
     },
     {
       image: img4,
-      who: "Karan Kumar",
-      time: "1 Jan 2023",
-      title: "Scale-Up Company Offer",
-      info: "Like to know the secrets of tranforming a 2-14 team into a 3x Super Bowl winning Dynasty",
-      tag1: "Money",
-      tag2: "Management",
+      who: "Abhey Tiwari",
+      time: "20 Jan 2025",
+      title: "Ensuring Secure Online Payments",
+      info: "A look at how secure payment gateways enhance customer trust in digital booking.",
+      tag1: "Payments",
+      tag3: "Finance",
     },
     {
       image: img5,
-      who: "Prabhash Mishra",
-      time: "1 Jan 2023",
-      title: "Small Business & startup",
-      info: "Like to know the secrets of tranforming a 2-14 team into a 3x Super Bowl winning Dynasty",
-      tag1: "",
-      tag2: "News",
-      tag3: "Tax & Return",
-      tag4: "Audit",
+      who: "Arjav Jain",
+      time: "22 Jan 2025",
+      title: "Tips for a Hassle-Free Bus Journey",
+      info: "Essential tips for a smooth experience with online booking and digital tickets.",
+      tag1: "Travel",
+      tag2: "Comfort",
     },
     {
       image: img6,
-      who: "Miss Nora",
-      time: "1 Jan 2023",
-      title: "Small Business & startup",
-      info: "Like to know the secrets of tranforming a 2-14 team into a 3x Super Bowl winning Dynasty",
-      tag1: "Private Limited ",
-      tag2: "Customer ",
-      tag3: "",
-      tag4: "",
+      who: "Kushagra Pandey",
+      time: "25 Jan 2025",
+      title: "The Future of Public Transport",
+      info: "How AI and digital innovations will shape the future of public transportation.",
+      tag1: "AI",
+      tag2: "Public Transport",
+      tag3: "Innovation",
     },
   ];
 
   return (
-    <div className=" bg-white items-center text-left mb-8">
+    <div className="bg-white items-center text-left mb-8">
       <div className="text-secondary text-sm pt-8 uppercase tracking-widest text-center">
         Explore Our Blogs
       </div>
       <div className="font-bold text-4xl py-2 pb-10 text-center">
-        Accelerate Digital Transformation
+        Transforming Public Transport
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 ">
-        {blog.map((house, index) => (
+        {blog.map((article, index) => (
           <div
             className="bg-white p-5 pb-10 w-full max-w-[352px] mx-auto cursor-pointer "
             key={index}
           >
-            <img className="mb-8 " src={house.image} alt="" />
+            <img className="mb-8 " src={article.image} alt="" />
             <div className="flex items-center text-gray-600 gap-1">
-              <div className="text-[20px] rounded-full">{house.who}</div>
+              <div className="text-[20px] rounded-full">{article.who}</div>
               <div className="text-base decoration-solid">
                 <ul>
-                  <li>{house.time}</li>
+                  <li>{article.time}</li>
                 </ul>
               </div>
             </div>
 
             <div className="text-lg font-semibold max-w-[260px]">
-              {house.title}
+              {article.title}
             </div>
-            <div className="flex gap-x-4 my-4">
-              <div className="flex items-center text-gray-600 gap-1">
-                <div className="text-[20px] rounded-full"></div>
-                <div className="text-base">{house.bedrooms}</div>
-              </div>
-              <div className="flex items-center text-gray-600 gap-1">
-                <div className="text-[20px] rounded-full"></div>
-                <div className="text-base">{house.bathrooms}</div>
-              </div>
-            </div>
-            <div className="text-lg text-gray-600 mb-4">{house.info}</div>
+            <div className="text-lg text-gray-600 mb-4">{article.info}</div>
             <div className="mb-4 flex gap-x-2 text-sm">
-              {house.tag1 && (
+              {article.tag1 && (
                 <div className="text-green-600 bg-green-200 rounded-full px-3 inline-block">
-                  {house.tag1}
+                  {article.tag1}
                 </div>
               )}
-              {house.tag2 && (
-                <div className="text-violet-600  bg-violet-200 rounded-full  px-3 inline-block">
-                  {house.tag2}
+              {article.tag2 && (
+                <div className="text-violet-600 bg-violet-200 rounded-full px-3 inline-block">
+                  {article.tag2}
                 </div>
               )}
-              {house.tag3 && (
-                <div className="text-blue-600 bg-blue-200 rounded-full  px-3 inline-block">
-                  {house.tag3}
-                </div>
-              )}
-              {house.tag4 && (
-                <div className="text-red-600 bg-red-200 rounded-full  px-3 inline-block">
-                  {house.tag4}
+              {article.tag3 && (
+                <div className="text-blue-600 bg-blue-200 rounded-full px-3 inline-block">
+                  {article.tag3}
                 </div>
               )}
             </div>
