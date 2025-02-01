@@ -31,16 +31,19 @@ function IconHeadings() {
   ];
 
   return (
-    <div className="flex items-center w-full p-8 bg-secondary justify-around">
+    <div className="flex flex-col sm:flex-row items-center w-full p-8 bg-secondary justify-center sm:justify-around gap-6">
       {headings.map((heading, index) => (
-        <div key={index} className="flex items-center mx-4">
+        <div
+          key={index}
+          className="flex items-center text-center sm:text-left sm:flex-row flex-col"
+        >
           <div
-            className="rounded-full p-3 flex items-center justify-center text-white mr-2 "
+            className="rounded-full p-3 flex items-center justify-center text-white mb-3 sm:mb-0 sm:mr-3"
             style={{ backgroundColor: heading.color }}
           >
             {heading.icon}
           </div>
-          <h2 className="text-l font-semibold pl-3">{heading.text}</h2>
+          <h2 className="text-l font-semibold sm:pl-3">{heading.text}</h2>
         </div>
       ))}
     </div>

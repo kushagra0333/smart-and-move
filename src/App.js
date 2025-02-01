@@ -12,7 +12,7 @@ import Connect from "./Connect";
 import { FaBus, FaClock, FaRocket, FaMapMarkerAlt, FaRoute } from 'react-icons/fa';
 import Footer from "./Footer";
 import MainPage from "./MainPage";
-
+import "./App.css"
 function App() {
  
 
@@ -62,7 +62,7 @@ const house = [
 
 
   return (
-    <div className=" w-full sm:max-w-[100%] mx-auto bg-white ">
+    <div className="app w-full sm:max-w-[100%] mx-auto bg-white ">
       
       <MainPage />
       <div className=" bg-service flex flex-col items-center text-center pt-14">

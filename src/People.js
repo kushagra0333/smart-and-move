@@ -61,6 +61,20 @@ const CustomerFeedback = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   const previous = () => {
@@ -97,20 +111,20 @@ const CustomerFeedback = () => {
           <Slider ref={sliderRef} {...settings}>
             {customers.map((customer, index) => (
               <div key={index} className="item ">
-                <div className="box bg-white p-6 rounded-lg shadow-lg ml-8">
-                  <div className="detail-box text-left">
-                    <div className="client_id flex  mb-4">
+                <div className="box bg-white p-6 rounded-lg shadow-lg mx-auto max-w-[350px] min-w-[300px] h-[400px]">
+                  <div className="detail-box text-left h-full flex flex-col">
+                    <div className="client_id flex mb-4">
                       <FaQuoteLeft
                         className="text-indigo-500 text-2xl items-left justify-start"
                         aria-hidden="true"
                       />
                     </div>
-                    <p className="text-gray-700">{customer.feedback}</p>
+                    <p className="text-gray-700 flex-grow">{customer.feedback}</p>
                     <div className="client_info mr-4 flex mt-5">
                       <div className="img-box mb-6">
                         <img
                           src={customer.image}
-                          alt=""
+                          alt={customer.name}
                           className="box-img w-24 h-24 rounded-full mx-auto"
                         />
                       </div>
