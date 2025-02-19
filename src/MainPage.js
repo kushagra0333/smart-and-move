@@ -56,7 +56,7 @@ const MainPage = () => {
     >
       <header className="flex justify-between items-center p-4 bg-black bg-opacity-30 relative">
         <div className="flex items-center gap-10">
-          <div className="text-2xl font-bold">Smart And Move</div>
+          <div className="text-2xl font-bold">Smart & Move</div>
           <nav className="hidden lg:flex">
             <ul className="flex gap-6 text-lg">
               <li className="cursor-pointer">Nearest Bus Stop</li>
